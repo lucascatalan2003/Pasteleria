@@ -265,6 +265,78 @@ main .contacto .menu-contacto .col .card img {
   height: 300px;
 }
 
+main .curso {
+  margin-right: 15%;
+  margin-left: 15%;
+}
+main .curso .curso-contenedor {
+  display: flex;
+}
+main .curso .curso-contenedor .informacion-curso {
+  margin-right: 15px;
+}
+main .curso .curso-contenedor .informacion-curso h2 {
+  color: brown;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+main .curso .curso-contenedor .informacion-curso p {
+  align-items: center;
+  color: rgb(92, 163, 139);
+  font-size: 17px;
+}
+main .curso .curso-contenedor .imagen-curso {
+  margin-left: 15px;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+main .curso .curso-contenedor .imagen-curso h3 {
+  color: brown;
+}
+main .curso .curso-contenedor .imagen-curso img {
+  width: 350px;
+}
+main .curso .curso-contenedor .imagen-curso p {
+  color: rgb(92, 163, 139);
+  font-size: 17px;
+}
+main .taller {
+  margin-right: 15%;
+  margin-left: 15%;
+}
+main .taller .taller-contenedor {
+  display: flex;
+}
+main .taller .taller-contenedor .informacion-taller h2 {
+  color: brown;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+main .taller .taller-contenedor .informacion-taller p {
+  align-items: center;
+  color: rgb(92, 163, 139);
+  font-size: 17px;
+}
+main .taller .taller-contenedor .imagen-taller h3 {
+  color: brown;
+  align-items: center;
+  padding: 40px;
+}
+main .taller .taller-contenedor .imagen-taller img {
+  width: 350px;
+  margin-left: 15px;
+  margin-bottom: 10%;
+}
+main .taller .taller-contenedor .imagen-taller p {
+  color: rgb(92, 163, 139);
+  font-size: 17px;
+}
+main .inscripciones .contenedor h4 {
+  color: rgb(92, 163, 139);
+}
+
 /* Index*/
 @media screen and (max-widht: 768px) {
   .contenedor {
