@@ -1,0 +1,14 @@
+/*Mixin*/
+
+@mixin flex($flex-direction, $justify-content, $align-items){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin block($text-align,$font-size){
+    display: block ;
+    text-align: $text-align;
+    font-size: $font-size;
+}

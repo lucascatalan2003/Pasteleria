@@ -19,7 +19,7 @@
                     color: #FFFFFF;
                     margin-bottom: 25px;
                     font-weight: 500;
-                    border-bottom: 2px solid #00c3ff;
+                    border-bottom: 2px solid brown;
                     padding-bottom: 10px;
                     // display: inline-block;
                     text-align: center;
@@ -55,6 +55,7 @@
                         border-radius: 50%;
                         color:#FFFFFF;
                         transition: all .5s ease;
+                        // justify-content: space-around;
                         &:hover{
                             background-color: #00c3ff;
                         }

@@ -1,44 +1,3 @@
-.header-service {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../assets/coffe1.webp);
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-}
-.header-service .menu-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.header-service .menu-container .navbar ul {
-  display: flex;
-  margin-top: 40px;
-}
-.header-service .menu-container .navbar ul li {
-  position: relative;
-  float: left;
-  list-style: none;
-}
-.header-service .menu-container .navbar ul li a {
-  font-size: 18px;
-  padding: 20px;
-  color: #FFFFFF;
-  display: block;
-  font-weight: 600;
-  text-decoration: none;
-}
-.header-service .menu-container .navbar ul li a:hover {
-  text-shadow: 5px 5px 10px #FFFFFF;
-}
-.header-service .header-content-container {
-  display: flex;
-  text-align: center;
-}
-
-.header-productos {
-  background-color: #24262B;
-}
 .header-productos img {
   width: 150px;
 }
@@ -64,7 +23,7 @@
 }
 .header-productos nav ul li a:hover {
   font-size: 20px;
-  text-shadow: 10px 5px 5px #00c3ff;
+  text-shadow: 10px 5px 5px brown;
 }
 
 .footer {
@@ -87,7 +46,7 @@
   color: #FFFFFF;
   margin-bottom: 25px;
   font-weight: 500;
-  border-bottom: 2px solid #00c3ff;
+  border-bottom: 2px solid brown;
   padding-bottom: 10px;
   text-align: center;
 }
@@ -118,99 +77,321 @@
   background-color: #00c3ff;
 }
 
+/* resets */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/*Mixin*/
+/*Globals*/
 body {
   font-family: "Times New Roman", Times, serif;
   font-size: 17px;
-  text-transform: capitalize;
   list-style: none;
   text-decoration: none;
 }
 
-main {
-  background-color: #FFFFFF;
-  margin-top: 30px;
+main .contenedor {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  margin: 10%;
 }
-main .coffee-container {
-  flex-direction: column;
+main .contenedor .menu-contenedor {
+  display: block;
 }
-main .coffee-container .coffee-types h1 {
-  text-align: center;
-  text-transform: uppercase;
+main .contenedor .menu-contenedor .text-contenedor {
+  display: block;
+  align-items: center;
+  color: black;
+  padding-right: 40px;
 }
-main .coffee-container .coffee-types img {
-  width: 100%;
-  width: 450px;
-}
-main .coffee-container .coffee-types h2 {
-  text-align: center;
-}
-main .coffee-container .coffee-types h2 h3 {
-  text-align: center;
-}
-main .coffee-container .coffee-types h2 .text-coffe {
+main .contenedor .menu-contenedor .text-contenedor strong {
   display: block;
   text-align: center;
-  text-transform: uppercase;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-
-.header-service {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), url(../../assets/coffe1.webp));
+main .contenedor .menu-contenedor .text-contenedor h1 {
+  display: block;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 800px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-.header-service .menu-container {
-  max-width: 1200px;
-  margin: 0 auto;
+main .contenedor .menu-contenedor .text-contenedor p {
+  display: block;
+  text-align: center;
+  padding-right: 40px;
 }
-.bar .bebidas .container-bar {
+main .contenedor .menu-contenedor .text-contenedor p .span-text {
+  color: brown;
+}
+main .imagen-contenedor img {
   display: flex;
-  width: 100%;
-  margin-left: 15px;
-  margin-right: 15px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  border-radius: 5px;
+}
+main .principal {
+  margin-bottom: 50px;
+  margin: 10%;
+}
+main .principal h2 {
+  margin: 80px;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+main .principal .principal-menu {
+  display: flex;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+main .principal .principal-menu .principal-titulo {
+  width: 260px;
+  background-color: rgb(251, 239, 239);
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  align-items: center;
+}
+main .principal .principal-menu .principal-titulo:hover {
   cursor: pointer;
 }
-.bar .bebidas .container-bar .subcontainer-bar {
-  margin: 20px;
-  width: 100%;
+main .principal .principal-menu .principal-titulo img {
+  width: 280px;
+  height: 200px;
 }
-.bar .bebidas .container-bar .subcontainer-bar h3 {
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 25px;
-  font-stretch: 400px;
+main .principal .principal-menu .principal-titulo .principal-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.bar .bebidas .container-bar .subcontainer-bar img {
-  width: 100%;
+main .principal .principal-menu .principal-titulo .principal-text p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+main .cursos h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .cursos .cursos-contenedor {
+  display: flex;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+main .cursos .cursos-contenedor .titulo-cursos {
   width: 350px;
-  border-radius: 6px;
-  box-shadow: 10px 11px 13px 0px black;
+  overflow: hidden;
 }
-.bar .bebidas .container-bar .subcontainer-bar img .img-uno {
-  position: relative;
-}
-.bar .bebidas .container-bar .subcontainer-bar img .text-uno {
-  position: absolute;
-  top: 0;
-  left: 0;
+main .cursos .cursos-contenedor .titulo-cursos img {
   width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to top, regba(255, 255, 255, 0.679), rgba(128, 128, 128, 0.495));
+  height: 250px;
 }
-
-.panaderia div h2 {
+main .cursos .cursos-contenedor .titulo-cursos img:hover {
+  cursor: pointer;
+}
+main .cursos .cursos-contenedor .titulo-cursos .texto-curso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .panadera .contenedor-panadera {
+  display: flex;
+  row-gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+main .panadera .contenedor-panadera .titulo-panadera {
+  width: 350px;
+  overflow: hidden;
+}
+main .panadera .contenedor-panadera .titulo-panadera img {
+  width: 100%;
+  height: 250px;
+}
+main .panadera .contenedor-panadera .titulo-panadera img:hover {
+  cursor: pointer;
+}
+main .panadera .contenedor-panadera .titulo-panadera .texto-panadera {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .panaderia div h2 {
   text-align: center;
   font-size: 20px;
   font-weight: 450px;
   font-family: "Times New Roman", Times, serif;
 }
-.panaderia div img {
-  width: 500px;
+main .panaderia div img {
   display: flex;
-  flex-direction: row;
+  margin-right: 30%;
+  margin-left: 30%;
+  width: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+main .panaderia div p {
+  margin-right: 20%;
+  margin-left: 20%;
+  align-items: center;
+}
+
+main .ofertas-contenedor .ofertas-subcontenedor .col .card img {
+  width: 350px;
+  height: 270px;
+}
+main .contacto .menu-contacto .col .card img {
+  width: 450px;
+  width: 100%;
+  height: 300px;
+}
+
+/* Index*/
+@media screen and (max-widht: 768px) {
+  .contenedor {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin: 10%;
+  }
+  .contenedor .menu-contenedor {
+    display: block;
+  }
+  .contenedor .menu-contenedor .text-contenedor {
+    display: block;
+    align-items: center;
+    color: black;
+    padding-right: 40px;
+  }
+  .contenedor .menu-contenedor .text-contenedor strong {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  .contenedor .menu-contenedor .text-contenedor h1 {
+    display: block;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 800px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  .contenedor .menu-contenedor .text-contenedor p {
+    display: block;
+    text-align: center;
+    padding-right: 40px;
+  }
+  .contenedor .menu-contenedor .text-contenedor p .span-text {
+    color: brown;
+  }
+  .contenedor .menu-contenedor .imagen-contenedor img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-widht: 768px) {
+  /*Footer*/
+  .footer {
+    background-color: #24262B;
+    padding: 80px 0;
+  }
+  .footer .footer-container {
+    margin: 0;
+  }
+  .footer .footer-container .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer .footer-container .footer-row .footer-links {
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer .footer-container .footer-row .footer-links h4 {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid brown;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .footer .footer-container .footer-row .footer-links ul li a {
+    text-decoration: none;
+    color: #BBBBBB;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+  }
+  .footer .footer-container .footer-row .footer-links ul li a:hover {
+    color: #FFFFFF;
+    padding-left: 6px;
+  }
+  .footer .footer-container .footer-row .footer-links ul .social-links {
+    display: inline-block;
+    min-height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all 0.5s ease;
+  }
+  .footer .footer-container .footer-row .footer-links ul .social-links:hover {
+    background-color: #00c3ff;
+  }
+  .bar {
+    display: flex;
+  }
+  .bar .bebidas {
+    margin: 0;
+  }
+  .bar .bebidas .container-bar {
+    display: flex;
+    width: 100%;
+    cursor: pointer;
+  }
+  .bar .bebidas .container-bar .subcontainer-bar {
+    display: flex;
+    width: 100%;
+  }
+  .bar .bebidas .container-bar .subcontainer-bar h3 {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .bar .bebidas .container-bar .subcontainer-bar img {
+    display: flex;
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 10px 11px 13px 0px black;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
