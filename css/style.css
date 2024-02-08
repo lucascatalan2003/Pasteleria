@@ -270,7 +270,7 @@ main .curso {
   margin-left: 15%;
 }
 main .curso .curso-contenedor {
-  display: flex;
+  display: block;
 }
 main .curso .curso-contenedor .informacion-curso {
   margin-right: 15px;
@@ -287,7 +287,6 @@ main .curso .curso-contenedor .informacion-curso p {
   font-size: 17px;
 }
 main .curso .curso-contenedor .imagen-curso {
-  margin-left: 15px;
   margin-top: 5%;
   margin-bottom: 10%;
 }
@@ -296,6 +295,7 @@ main .curso .curso-contenedor .imagen-curso h3 {
 }
 main .curso .curso-contenedor .imagen-curso img {
   width: 350px;
+  width: 100%;
 }
 main .curso .curso-contenedor .imagen-curso p {
   color: rgb(92, 163, 139);
@@ -306,7 +306,7 @@ main .taller {
   margin-left: 15%;
 }
 main .taller .taller-contenedor {
-  display: flex;
+  display: block;
 }
 main .taller .taller-contenedor .informacion-taller h2 {
   color: brown;
@@ -326,8 +326,7 @@ main .taller .taller-contenedor .imagen-taller h3 {
 }
 main .taller .taller-contenedor .imagen-taller img {
   width: 350px;
-  margin-left: 15px;
-  margin-bottom: 10%;
+  width: 100%;
 }
 main .taller .taller-contenedor .imagen-taller p {
   color: rgb(92, 163, 139);
@@ -337,132 +336,14 @@ main .inscripciones .contenedor h4 {
   color: rgb(92, 163, 139);
 }
 
-/* Index*/
+/*Footer*/
 @media screen and (max-widht: 768px) {
-  .contenedor {
-    display: flex;
+  .footer .footer-row {
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 20px;
-    margin: 10%;
   }
-  .contenedor .menu-contenedor {
-    display: block;
-  }
-  .contenedor .menu-contenedor .text-contenedor {
-    display: block;
-    align-items: center;
-    color: black;
-    padding-right: 40px;
-  }
-  .contenedor .menu-contenedor .text-contenedor strong {
-    display: block;
-    text-align: center;
-    font-size: 30px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  }
-  .contenedor .menu-contenedor .text-contenedor h1 {
-    display: block;
-    text-align: center;
-    font-size: 70px;
-    font-weight: 800px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  }
-  .contenedor .menu-contenedor .text-contenedor p {
-    display: block;
-    text-align: center;
-    padding-right: 40px;
-  }
-  .contenedor .menu-contenedor .text-contenedor p .span-text {
-    color: brown;
-  }
-  .contenedor .menu-contenedor .imagen-contenedor img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 150px;
-    border-radius: 5px;
-  }
-}
-@media screen and (max-widht: 768px) {
-  /*Footer*/
-  .footer {
-    background-color: #24262B;
-    padding: 80px 0;
-  }
-  .footer .footer-container {
-    margin: 0;
-  }
-  .footer .footer-container .footer-row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .footer .footer-container .footer-row .footer-links {
-    width: 25%;
-    padding: 0 15px;
-  }
-  .footer .footer-container .footer-row .footer-links h4 {
-    font-size: 20px;
-    color: #FFFFFF;
-    margin-bottom: 25px;
-    font-weight: 500;
-    border-bottom: 2px solid brown;
-    padding-bottom: 10px;
-    text-align: center;
-  }
-  .footer .footer-container .footer-row .footer-links ul li a {
-    text-decoration: none;
-    color: #BBBBBB;
-    font-size: 18px;
-    display: block;
-    margin-bottom: 15px;
-    transition: all 0.3s ease;
-  }
-  .footer .footer-container .footer-row .footer-links ul li a:hover {
-    color: #FFFFFF;
-    padding-left: 6px;
-  }
-  .footer .footer-container .footer-row .footer-links ul .social-links {
-    display: inline-block;
-    min-height: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #FFFFFF;
-    transition: all 0.5s ease;
-  }
-  .footer .footer-container .footer-row .footer-links ul .social-links:hover {
-    background-color: #00c3ff;
-  }
-  .bar {
-    display: flex;
-  }
-  .bar .bebidas {
-    margin: 0;
-  }
-  .bar .bebidas .container-bar {
-    display: flex;
+  .footer .footer-row .footer-links {
     width: 100%;
-    cursor: pointer;
-  }
-  .bar .bebidas .container-bar .subcontainer-bar {
-    display: flex;
-    width: 100%;
-  }
-  .bar .bebidas .container-bar .subcontainer-bar h3 {
-    text-align: center;
-    font-family: "Times New Roman", Times, serif;
-  }
-  .bar .bebidas .container-bar .subcontainer-bar img {
-    display: flex;
-    width: 100%;
-    border-radius: 6px;
-    box-shadow: 10px 11px 13px 0px black;
+    margin-bottom: 30px;
   }
 }
 
