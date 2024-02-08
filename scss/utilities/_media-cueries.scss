@@ -1,17 +1,24 @@
 // Media
 
 /*Footer*/
-@media screen and (max-widht: 768px) {
+@media screen and (max-widht: 768px){
+    .footer {
+        background-color: #24262B;
 
-.footer{
-            .footer-row {
-                align-items: center;
+      }
+      .footer .footer-container {
+        display: flex;
+      }
+      .footer .footer-container .footer-row {
+        display: flex;
+        flex-direction: column;
+      }
+      .footer .footer-container .footer-row .footer-links {
+        width: 100%;
+      }
+      .footer .footer-container .footer-row .footer-links h4{
+        color: gold;
+      }
+    
+}
 
-                .footer-links {
-                    width: 100%;
-                    margin-bottom: 30px;
-
-                }
-            }
-        }
-    }
